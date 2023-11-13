@@ -1,0 +1,48 @@
+.b{
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: rgb(232, 60, 140);
+}
+.board{
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-gap: 2px;
+}
+
+.cell{
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    background-color: rgb(122, 46, 208);
+    border: 2px solid #800c0c;
+    cursor: pointer;
+}
+
+.cell[data-cell="X"] {
+    color: rgb(18, 170, 170);
+}
+.cell[data-cell="0"] {
+    color:rgb(164, 11, 11);
+}
+
+
+.t1 {
+    display: block;
+    color: initial; /* Set the initial text color */
+    transition: color 0.3s; /* Add a smooth transition effect */
+
+    /* Additional styling if needed */
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.t1:hover {
+    color: #00ff1e; /* Change the text color on hover to red (replace with your desired color) */
+}
